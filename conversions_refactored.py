@@ -26,7 +26,7 @@ def convert(from_unit, to_unit, value):
         elif from_unit == "kelvin":
             if to_unit == "celsius":
                 return value - 273.15
-            elif to_unit == "fahrenheit":
+            elif to_unit == "fahrenheit":t
                 return (value - 273.15) * 9/5 + 32
 
     # Distance conversions
@@ -40,7 +40,3 @@ def convert(from_unit, to_unit, value):
         return value * distance_conversion_factors[from_unit][to_unit]
 
     raise ConversionNotPossible(f"Conversion from {from_unit} to {to_unit} is not possible.")
-
-
-
-
